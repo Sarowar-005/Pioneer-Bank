@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--External css link-->
+    <link rel="stylesheet" href="style.css">
+    <!--Bootstrap css link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Pioneer Bank</title>
+</head>
+<body class="bg-dark">
+
+
+        <div id="login-area">
+            <div class="container">
+                <h1 class="text-center text-white h3 my-4">WELCOME TO PIONEER BANK</h1>
+                <div id="submit-area" class="form-group">
+                    <input id="userEmail"class="form-control" type="email" name="" id="" placeholder="Email">
+                    <input id="userPass" class="form-control" type="password" name="" id="" placeholder="Password">
+                    <button id="login" class="btn btn-success">ENTER</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="transaction-area">
+            <h1 class="text-center text-white transaction-title">TRANSACTION AREA</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="deposit">
+                        <h3>Deposit</h3>
+                        <h1>$<span id="current-deposit">00</span></h1>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="withdraw">
+                        <h3>Withdraw</h3>
+                        <h1>$<span id="current-withdraw">00</span></h1>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="balance">
+                        <h3>Balance</h3>
+                        <h1>$<span id="current-balance">1200</span></h1>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="set-transaction">
+                <div class="row mt-4">
+                    <div class="col-md-6 col-6">
+                        <div id="set-deposit">
+                            <h4 class="mb-4">Deposit</h4>
+                            <input id="deposit-amount" class="form-control mb-4" type="number" placeholder="Amount you want to deposit">
+                            <button id="deposit-btn" class="btn btn-success">Deposit</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-6">
+                        <div id="set-withdraw">
+                            <h4 class="mb-4">Withdraw</h4>
+                            <input id="withdraw-amount" class="form-control mb-4" type="number" placeholder="Amount you want to withdraw">
+                            <button id="withdraw-btn" class="btn btn-success">withdraw</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script src="js.js"></script>
+</body>
+</html>
